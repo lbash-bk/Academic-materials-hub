@@ -68,8 +68,12 @@ WSGI_APPLICATION = 'studyhub.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'academic_hub',  
+        'USER': 'postgres',     
+        'PASSWORD': 'Bash1010@',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 
